@@ -25,3 +25,25 @@ function calcularPrecio () {
     document.getElementById("advanced").innerHTML = advanced;
     document.getElementById("pro").innerHTML = pro;
 }
+
+// PLANES (OBJETOS CON CLASES Y ARRAYS)
+class Plan {
+    constructor (nombre, features ,callToAction){
+        this.nombre = nombre;
+        this.features = features;
+        this.callToAction = callToAction;
+    }
+}
+
+const starterPlan = new Plan("Starter", ["10 usuarios incluidos","2GB de espacio","Soporte por email","Acceso al centro de ayuda"],"Empieza Gratis");
+const advancedPlan = new Plan("Advanced", ["Feature 1","Feature 2","Feature 3","Feature 4"], "Empieza Ahora");
+const proPlan = new Plan("Pro", ["Feature 1","Feature 2","Feature 3","Feature 4"], "Habla con Ventas");
+
+// USO DE VARIABLES EN EL HTML
+document.getElementById("starter.nombre").innerHTML = starterPlan.nombre;
+document.getElementById("advanced.nombre").innerHTML = advancedPlan.nombre;
+document.getElementById("pro.nombre").innerHTML = proPlan.nombre;
+
+document.getElementById("starter.CTA").innerHTML = starterPlan.callToAction;
+document.getElementById("advanced.CTA").innerHTML = advancedPlan.callToAction;
+document.getElementById("pro.CTA").innerHTML = proPlan.callToAction;

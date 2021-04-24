@@ -78,24 +78,24 @@
       <div class="col">
         <div class="card mb-4 rounded-3 shadow-sm">
           <div class="card-header py-3">
-            <h4 class="my-0 fw-normal">Starter</h4>
+            <h4 class="my-0 fw-normal" id="starter.nombre"></h4>
           </div>
           <div class="card-body">
             <h1 class="card-title pricing-card-title">$<span id="starter"></span><small class="text-muted fw-light">/mes</small></h1>
-            <ul class="list-unstyled mt-3 mb-4">
+            <ul class="list-unstyled mt-3 mb-4" id="starter.features">
               <li>10 users included</li>
               <li>2 GB of storage</li>
               <li>Email support</li>
               <li>Help center access</li>
             </ul>
-            <button type="button" class="w-100 btn btn-lg btn-outline-primary">Sign up for free</button>
+            <button type="button" class="w-100 btn btn-lg btn-outline-primary" id="starter.CTA"></button>
           </div>
         </div>
       </div>
       <div class="col">
         <div class="card mb-4 rounded-3 shadow-sm">
           <div class="card-header py-3">
-            <h4 class="my-0 fw-normal">Advaced</h4>
+            <h4 class="my-0 fw-normal" id="advanced.nombre"></h4>
           </div>
           <div class="card-body">
             <h1 class="card-title pricing-card-title">$<span id="advanced"></span><small class="text-muted fw-light">/mes</small></h1>
@@ -105,14 +105,14 @@
               <li>Priority email support</li>
               <li>Help center access</li>
             </ul>
-            <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button>
+            <button type="button" class="w-100 btn btn-lg btn-primary" id="advanced.CTA"></button><span id="advanced"></span></button>
           </div>
         </div>
       </div>
       <div class="col">
         <div class="card mb-4 rounded-3 shadow-sm border-primary">
           <div class="card-header py-3 text-white bg-primary border-primary">
-            <h4 class="my-0 fw-normal">Pro</h4>
+            <h4 class="my-0 fw-normal" id="pro.nombre"></h4>
           </div>
           <div class="card-body">
             <h1 class="card-title pricing-card-title">$<span id="pro"></span><small class="text-muted fw-light">/mes</small></h1>
@@ -122,7 +122,7 @@
               <li>Phone and email support</li>
               <li>Help center access</li>
             </ul>
-            <button type="button" class="w-100 btn btn-lg btn-primary">Contact us</button>
+            <button type="button" class="w-100 btn btn-lg btn-primary" id="pro.CTA"></button></button>
           </div>
         </div>
       </div>
@@ -135,9 +135,9 @@
         <thead>
           <tr>
             <th style="width: 34%;"></th>
-            <th style="width: 22%;">Free</th>
+            <th style="width: 22%;">Starter</th>
+            <th style="width: 22%;">Advavanced</th>
             <th style="width: 22%;">Pro</th>
-            <th style="width: 22%;">Enterprise</th>
           </tr>
         </thead>
         <tbody>
