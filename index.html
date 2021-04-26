@@ -60,7 +60,7 @@
   </header>
 
   <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
-    <h1 class="display-4 fw-normal">Planes</h1>
+    <h1 class="display-4 fw-normal"> <span id="usuario"></span> elige tu Plan</h1>
     <p class="fs-5 text-muted">Un precio a medida de cada hotel.</p>
    
     <!-- CANTIDAD DE HABITACIONES -->
@@ -68,12 +68,13 @@
       <div class="input-group-prepend">
         <span class="input-group-text" id="inputGroup-sizing-default">¿Cuántas habitaciones tienes?</span>
       </div>
-      <input type="number" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" value="10" id="rooms" min="1" oninput="calcularPrecio()">
+      <input type="number" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" value="10" id="rooms" min="1" max="100" oninput="updatePrecio()">
     </div>
 
   </div>
 
   <main>
+       <!-- STARTER -->
     <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
       <div class="col">
         <div class="card mb-4 rounded-3 shadow-sm">
@@ -92,23 +93,25 @@
           </div>
         </div>
       </div>
+       <!-- ADVANCE -->
       <div class="col">
         <div class="card mb-4 rounded-3 shadow-sm">
           <div class="card-header py-3">
-            <h4 class="my-0 fw-normal" id="advanced.nombre"></h4>
+            <h4 class="my-0 fw-normal" id="advance.nombre"></h4>
           </div>
           <div class="card-body">
-            <h1 class="card-title pricing-card-title">$<span id="advanced"></span><small class="text-muted fw-light">/mes</small></h1>
+            <h1 class="card-title pricing-card-title">$<span id="advance"></span><small class="text-muted fw-light">/mes</small></h1>
             <ul class="list-unstyled mt-3 mb-4">
               <li>20 users included</li>
               <li>10 GB of storage</li>
               <li>Priority email support</li>
               <li>Help center access</li>
             </ul>
-            <button type="button" class="w-100 btn btn-lg btn-primary" id="advanced.CTA"></button><span id="advanced"></span></button>
+            <button type="button" class="w-100 btn btn-lg btn-primary" id="advance.CTA"></button><span id="advanced"></span></button>
           </div>
         </div>
       </div>
+       <!-- PRO -->
       <div class="col">
         <div class="card mb-4 rounded-3 shadow-sm border-primary">
           <div class="card-header py-3 text-white bg-primary border-primary">
